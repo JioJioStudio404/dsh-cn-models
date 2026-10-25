@@ -1,0 +1,69 @@
+{
+  "name": "dsh-cn-models",
+  "version": "0.5.0",
+  "description": "Chinese LLM vendors for DeepSeek Harness — DeepSeek, Kimi (incl. Kimi Code), Zhipu GLM / Z.ai (incl. Coding Plan), MiniMax (incl. M Plan), Qwen on Alibaba Bailian (incl. Coding / Token Plan), Xiaomi MiMo and Baidu Qianfan (incl. Token Plan) — with many API keys per endpoint: validity, balance and plan quota per key, automatic switching to the next key, reasoning effort, tool calling and reasoning replay.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./typert": {
+      "default": "./lib/typert.host.js"
+    },
+    "./bin/import-keys": "./bin/import-keys.mjs",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "dsh-cn-models-import": "bin/import-keys.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "files": [
+    "lib",
+    "bin",
+    "install.mjs",
+    "cordis.patch.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "check": "node --check lib/index.js && node --check lib/client.js && node --check bin/import-keys.mjs",
+    "pack:dist": "npm pack"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "deepseek",
+    "kimi",
+    "moonshot",
+    "glm",
+    "zhipu",
+    "minimax",
+    "qwen",
+    "dashscope",
+    "bailian",
+    "mimo",
+    "qianfan",
+    "baidu",
+    "multi-key",
+    "llm",
+    "adapter"
+  ],
+  "license": "MIT"
+}

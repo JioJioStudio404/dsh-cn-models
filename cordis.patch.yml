@@ -1,0 +1,13 @@
+# dsh-cn-models bundle patch: one host row.
+#
+# The row id is also the settings namespace of this plugin's Models-page rows
+# (one per endpoint that has keys), where its card renders
+# (`settings.models.provider-card`, keyed by this id). Keys live in
+# $DSH_HOME/storages/cn-models-keys.json and are managed in the "国内模型"
+# conversation tab, not here.
+
+- insert:
+    - id: dsh-cn-models
+      name: dsh-cn-models
+      inject: ['llm']
+      config: {}
