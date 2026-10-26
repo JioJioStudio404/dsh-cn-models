@@ -1,6 +1,6 @@
 {
   "name": "dsh-cn-models",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Chinese LLM vendors for DeepSeek Harness — DeepSeek, Kimi (incl. Kimi Code), Zhipu GLM / Z.ai (incl. Coding Plan), MiniMax (incl. M Plan), Qwen on Alibaba Bailian (incl. Coding / Token Plan), Xiaomi MiMo and Baidu Qianfan (incl. Token Plan) — with many API keys per endpoint: validity, balance and plan quota per key, automatic switching to the next key, reasoning effort, tool calling and reasoning replay.",
   "type": "module",
   "main": "lib/index.js",
